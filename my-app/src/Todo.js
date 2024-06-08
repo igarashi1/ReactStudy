@@ -44,7 +44,7 @@ const Todo = () => {
     <div>
       <h1>Todoリスト</h1>
       <AddTask tasks={tasks} setTasks={setTasks} />
-      <ShowTasks tasks={tasks} setTasks={setTasks} handleSelectTask={() => handleSelectTask(e.target.value)} />
+      <ShowTasks tasks={tasks} setTasks={setTasks} handleSelectTask={(e) => handleSelectTask(e.target.value)} />
       {/*優先順位
       <select onChange={(e) => setPriority(e.target.value)}>
         <option value="1">低</option>
