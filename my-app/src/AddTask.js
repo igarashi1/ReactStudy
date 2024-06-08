@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export const AddTask = ({tasks,setTasks})=>{
   const [input,setInput] = useState('');
-  const [id,setId] = useState(1);
+  const [id,setId] = useState(0);
 
   const handleOnClick = () =>{
     if(input.trim()){//入力があるかつ空白のみでない場合
